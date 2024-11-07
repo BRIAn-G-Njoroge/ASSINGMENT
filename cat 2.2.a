@@ -1,0 +1,31 @@
+/*cat 2 a
+Author:Brian Njoroge
+REg no:CT101/G/23290/24
+date:7/11/24
+*/
+#include<stdio.h>
+#include<string.h>
+struct employee{
+	char name[25];
+	int id;
+	char department[20];
+	float salary;
+	char email[50];
+
+int main(){
+	struct employee emp={
+		"john dee",
+		12345,
+		"human resource",
+		55000.50,
+		"john.doe@company.com"
+	};
+	//print the field values
+	printf("name:%s\n",emp.name);
+	printf("id:%d\n",emp.id);
+	printf("department:%s\n",emp.department);
+	printf("salary:%.2f\n",emp.salary);
+	printf("email:%s\n",emp.email);
+	return 0;
+}
+
