@@ -7,9 +7,9 @@ Date:7/11/24
 int main(){
 	float hours , hourly_wage,gross_pay,taxes,net_pay;
 	printf("enter the hours worked in a week:");
-	scanf("%f",%hours);
+	scanf("%f",&hours);
 	printf("enter hourly_wage:");
-	scanf("%f",%hourly_wage);
+	scanf("%f",&hourly_wage);
 	if(hours>40){
 		gross_pay=(40+hourly_wage)+((hours-40)*hourly_wage*1.5);
 	}else{
